@@ -9,17 +9,15 @@ var twoSum = function(nums, target) {
 
     const numsMap = new Map();
 
-    for(let i = 0; i < nums.length; i++){
-        
-        if(!numsMap.has(nums[i])){
-            numsMap.set(nums[i], i); 
-        }
-        
+    for(let i = 0 ; i < nums.length; i++){
         let diff = target - nums[i];
-        if(numsMap.has(diff) && numsMap.get(diff) !== i){
-            return [i, numsMap.get(diff)];
-        } 
+
+        if(numsMap.has(diff)){
+            return[i, numsMap.get(diff)];
+        }
+
+        numsMap.set(nums[i], i);
     }
 
-    return [-1,-1];
+    return [-1, -1];
 };
