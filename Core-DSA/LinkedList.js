@@ -26,6 +26,13 @@ class LinkedList{
     
         this.size++;
     }
+
+    prepend(value) {
+        const newNode = new Node(value);
+        newNode.next = this.head;
+        this.head = newNode;
+        this.size++;
+    }
     
     print(){
         let current = this.head;
