@@ -24,6 +24,11 @@ class MyLinkedList(object):
         :type val: int
         :rtype: None
         """
+
+        node = Node(val)
+        node.next = self.head.next
+        self.head.next = node
+        self.size += 1
         
 
     def addAtTail(self, val):
@@ -31,6 +36,12 @@ class MyLinkedList(object):
         :type val: int
         :rtype: None
         """
+
+        curr = self.head
+        while curr.next:
+            curr = curr.next
+        curr.next = Node(val)
+        self.size += 1
         
 
     def addAtIndex(self, index, val):
@@ -39,6 +50,16 @@ class MyLinkedList(object):
         :type val: int
         :rtype: None
         """
+
+        if index < 0 or index > self.size:
+            return
+        curr = self.head
+        for _ in range(index):
+            curr = curr.next
+        node Node(val)
+        node.next = curr.next
+        curr.next = node
+        self.size += 1
         
 
     def deleteAtIndex(self, index):
@@ -47,3 +68,12 @@ class MyLinkedList(object):
         :rtype: None
         """
         
+
+
+# Your MyLinkedList object will be instantiated and called as such:
+# obj = MyLinkedList()
+# param_1 = obj.get(index)
+# obj.addAtHead(val)
+# obj.addAtTail(val)
+# obj.addAtIndex(index,val)
+# obj.deleteAtIndex(index)
