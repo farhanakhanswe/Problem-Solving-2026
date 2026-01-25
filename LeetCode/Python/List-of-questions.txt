@@ -1,6 +1,6 @@
 (1) Arrays & Hashing
 	(A) Easy
-		(i)   https://leetcode.com/problems/contains-duplicate/ (NOT SOLVED)
+		(i)   https://leetcode.com/problems/contains-duplicate/
 		(ii)  https://leetcode.com/problems/two-sum/
 		(iii) https://leetcode.com/problems/valid-anagram/ (NOT SOLVED)
 
