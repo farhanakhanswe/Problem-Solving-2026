@@ -26,5 +26,5 @@
 
 (4) Two Pointers
 	(A) Easy
-		(i)   https://leetcode.com/problems/valid-palindrome/ (NOT SOLVED)
+		(i)   https://leetcode.com/problems/valid-palindrome/
 	
