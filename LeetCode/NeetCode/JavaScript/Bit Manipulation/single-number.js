@@ -1,10 +1,8 @@
 /**
- * Question Link: https://leetcode.com/problems/single-number/
  * @param {number[]} nums
  * @return {number}
  */
-
-var singleNumber = function(nums) {
+var singleNumber = function (nums) {
     // non-empty array of integers nums
     // every integer appears twice except for one
     // return the integer that appears only once
@@ -15,14 +13,15 @@ var singleNumber = function(nums) {
     // if we find a number in the parent loop that doesn't exist in the child loop then we 
     // will return that number
 
-    for(let i = 0; i < nums.length; i++){
+    for (let i = 0; i < nums.length; i++) {
         let appearsTwice = false;
-        for(let j = 0; j < nums.length; j++){
-            if(i !== j && nums[i] === nums[j]){
+        for (let j = 0; j < nums.length; j++) {
+            if (i !== j && nums[i] === nums[j]) {
                 appearsTwice = true;
+                break;
             }
         }
 
-        if(!appearsTwice) return nums[i];
+        if (!appearsTwice) return nums[i];
     }
 };
