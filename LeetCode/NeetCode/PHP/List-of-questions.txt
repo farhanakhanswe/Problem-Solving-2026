@@ -28,3 +28,8 @@
 	(A) Easy
 		(i)   https://leetcode.com/problems/valid-palindrome/
 	
+-------------------------------------------------------------------------------------------
+
+(5) Bit Manipulation
+	(A) Easy	
+		(i)   https://leetcode.com/problems/single-number/
