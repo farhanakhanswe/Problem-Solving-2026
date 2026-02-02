@@ -28,6 +28,9 @@
 (4) Two Pointers
 	(A) Easy
 		(i)   https://leetcode.com/problems/valid-palindrome/
+
+	(B) Medium
+		(i)   https://leetcode.com/problems/3sum/
 	
 -------------------------------------------------------------------------------------------
 
