@@ -4,45 +4,33 @@
  * @return {number[][]}
  */
 var threeSum = function (nums) {
-    // given int array nums, return all the triplets
-    // i != j i != k j!= k
-    // nums[i] + nums[j] + nums[k] == 0
-    // soln set must not contain duplicate triplets
-    // each triplet will contain 3 elements from different indices
-    // these 3 elements can be the same value but the indice must be different
+    nums.sort((a, b) => a - b);
+    let result = []
 
-    // preparation:
-    // we pick one num in a parent loop
-    // we then add that num with another num with diff indice in a child loop
-    // we then add the result so far with another num with diff indice  in a grandchild loop
-    // if the total is 0, we can add the three elements to a subarray which can
-    // later be pushed to the final array we will return
+    for (let i = 0; i < nums.length; i++) {
+        if (i > 0 && nums[i] == nums[i - 1]) {
+            continue;
+        }
 
-    // if the arr nums length is 3 we can try to add the  numbers to see if we get 0
+        leftPtr = i + 1;
+        rightPtr = nums.length - 1;
 
-    // i , j, k are indices
-    // i cannot be j
-    // i cannot be k
-    // j cannot be k
-    // that means i cannot be j or k, j cannot be i or k, k cannot be i or j
-    // basically meaning all three elements in the triplet have to have unique indices
+        while (leftPtr < rightPtr) {
+            let threeSum = nums[i] + nums[leftPtr] + nums[rightPtr];
+            if (threeSum > 0) {
+                rightPtr -= 1;
+            } else if (threeSum < 0) {
+                leftPtr += 1;
+            } else {
+                result.push([nums[i], nums[leftPtr], nums[rightPtr]]);
+                leftPtr += 1;
 
-    // Solution 1: Brute force soln
-
-    const tripletSet = new Set();
-    const numLen = nums.length;
-
-    for (let i = 0; i < numLen; i++) {
-        for (let j = i + 1; j < numLen; j++) {
-            for (let k = j + 1; k < numLen; k++) {
-                if (nums[i] + nums[j] + nums[k] === 0) {
-                    let triplet = [nums[i], nums[j], nums[k]].sort((a, b) => a - b);
-                    tripletSet.add(triplet.toString());
+                while (nums[leftPtr] == nums[leftPtr - 1] && leftPtr < rightPtr) {
+                    leftPtr += 1
                 }
             }
         }
     }
 
-    return Array.from(tripletSet).map(t => t.split(',').map(Number));
-
+    return result;
 };
