@@ -42,7 +42,7 @@ var twoSum = function(nums, target) {
 
     // since the array is sorted we know the numbers on the left will be smaller than the ones on the right
     // we can use pointer technique to move from left and right towards eachother
-    // we can add the numbers and check if the sum is greater or less than 0
+    // we can add the numbers and check if the sum is greater or less than the target
     // if the sum is less than the target, we have to increase one of the numbers to increase the sum 
     // in this case, we increase number by moving the left pointer to the right
     // if the sum is more than the target, we have to decrease the sum by reducing one of the numbers
