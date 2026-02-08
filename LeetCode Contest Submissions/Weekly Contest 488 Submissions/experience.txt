@@ -1,0 +1,21 @@
+Link: https://leetcode.com/contest/weekly-contest-488/
+
+This was my first time attempting a leetcode contest. I managed to solve only 1 problem before time was up.
+It's okay. If I keep practicing, I will be able to solve all on time in the upcoming contests.
+
+Contest Ranking: 22311
+
+Here's the problem list:
+
+-- Easy --
+
+(1) (SOLVED) Count Dominant Indices: https://leetcode.com/problems/count-dominant-indices/description/
+
+-- Medium --
+
+(1) Merge Adjacent Equal Elements: https://leetcode.com/problems/merge-adjacent-equal-elements/description/
+(2) Count Subarrays With Cost Less Than or Equal to K: https://leetcode.com/problems/count-subarrays-with-cost-less-than-or-equal-to-k/description/
+
+-- Hard --
+
+(1) Maximum Score Using Exactly K Pairs: https://leetcode.com/problems/maximum-score-using-exactly-k-pairs/description/
