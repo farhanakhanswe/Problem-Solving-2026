@@ -1,5 +1,6 @@
 /* optimized soln in progress */
 
+// Solution 1: Time Complexity: O(n^2) & Space Complexity: O(1)
 /**
  * @param {number[]} nums
  * @return {number}
@@ -43,6 +44,11 @@ var dominantIndices = function (nums) {
 
     return count;
 
+};
+
+// Solution 2: Time Complexity: O(n) & Space Complexity: O(n)
+
+var dominantIndices = function (nums) {
     // preparaton of a more optimized soln
     // can we have a condition that stops the child loop from iterating?
     // any point when we do not have to calc the avg for the curr el?
@@ -61,7 +67,49 @@ var dominantIndices = function (nums) {
     // for example:
     // for i = 0 in parent loop, i'm adding all the numbers from i = 1 till the end
     // for i = 1 in parent loop, i'm adding all the numbers from i = 2 till the end
+    // in this example, im adding elements from index 3 till the end twice
 
+    // lets say for i = 0, i store the sum of all the elements in the variable -> totalSum
+    // create a map where the key is the index number and value is the sum of elements from that index to the end
+    // for i = 1, I store totalSum - nums[0], then that will give me sum from index = 1 till the end
+    // for i = 2, I store totalSum - nums[0] - nums [1], then that will give me sum from index = 2 till the end
+    // for i = 3, I store totalSum - nums[0] - nums[1] - nums[2], then that will give me sum from index = 3 till the end
 
+    // now, that means
+    // for i = 1, totalSum - nums[0]
+    // for i = 2, (suffixsum of i = 1) - nums[1]
+    // for i = 3, (suffixsum of i = 2) - nums[2]
+    // for i = 4, (suffixsum of i = 3) - nums[3]
+
+    // now that we have the map, lets do the operation of finding the dominant indices
+    // we will take a new loop and iterate over each num
+    // for i loop, we will look for suffix (i + 1) and compare if nums[i] > suffixsum(i+1)/(nums.length - i - 1)
+    // if it is dominant, we can increase the count for dominant indices
+
+    let totalSum = 0;
+
+    // find the total sum of all the elements
+    for (let i = 0; i < nums.length; i++) {
+        totalSum += nums[i];
+    }
+
+    // create a hashmap; key is the index and value is the sum of all the elements from the current element till the end
+    let map = new Map();
+    map.set(0, totalSum);
+
+    for (let i = 1; i < nums.length; i++) {
+        let suffixSum = map.get(i - 1) - nums[i - 1];
+        map.set(i, suffixSum);
+    }
+
+    // find dominant indices
+    let count = 0;
+    for (let i = 0; i < nums.length - 1; i++) {
+        if (nums[i] > map.get(i + 1) / (nums.length - i - 1)) {
+            count++;
+        }
+    }
+
+    return count;
 
 };
