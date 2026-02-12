@@ -120,18 +120,3 @@ var mergeAdjacent = function (nums) {
     // we can use a while loop for this
     // at the end we just return the stack
 
-
-    // let's start over
-    // seems like the best approach is to use a stack
-    // earlier we did some checks with the curr el and next el before we pushed to stack
-    // but come to think of it, why do we even need to check if the curr el is equal to the next el when we have already
-    // pushed the earlier numbers/sums into the stack AND the problem requires us to 
-    // " choose the leftmost such adjacent pair in the current array "
-    // we can push the first el into the stack
-    // we can start iterating the loop from the index = 1 and check if the curr el in the array is the same as the last el in the stack
-    // if it is the same el then we add the number with itself and
-    // push it to the stack IF the latest element in the stack is not equal to the  new sum
-    // if the new sum is equal to the latest number in the stack then add the new sum with itself and pop off the latest el from the stack
-    // this recurring addition of numbers and popping off elements from stack will stop once the sum is no longer same as the lastest stack el
-    // we can use a while loop for this
-    // at the end we just return the stack
