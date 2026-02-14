@@ -1,0 +1,21 @@
+Link: https://leetcode.com/contest/biweekly-contest-176/
+
+I experienced nervousness during the contest which slowed me down.
+I plan to keep practicing more timed contests like this to improve my speed and composure under pressure.
+
+Contest Ranking: 26880
+
+Here's the problem list:
+
+-- Easy --
+
+(1) (SOLVED) https://leetcode.com/problems/weighted-word-mapping/
+
+-- Medium --
+
+(1) https://leetcode.com/problems/number-of-prefix-connected-groups/
+(2) (ATTEMPTED) https://leetcode.com/problems/house-robber-v/description/
+
+-- Hard --
+
+(1) https://leetcode.com/problems/palindromic-path-queries-in-a-tree/
