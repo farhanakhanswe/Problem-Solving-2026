@@ -60,4 +60,56 @@ var almostPalindromic = function (s) {
     // zbba
 
     // ....plenty
+
+    // okay so substring must be a continous in the original string. Let's pick str = "abba" 
+    // Substring needs to be a "part" of the string so if we do "baba" as substring it's wrong
+    // as "baba" is not part of "abba"
+
+    // so we can try to find all the possible substrings using nested loops and then use
+    // two pointer techique to find if the substring is a palindrome
+    // after removing one char from it
+
+    // let's first create substrings 
+    // they must be length of atleast 2
+
+    let longestStr = "";
+
+    for (let i = 0; i < s.length; i++) {
+        let newStr = s[i];
+        for (let j = i + 1; j < s.length; j++) {
+            newStr += s[j];
+
+            let leftPtr = 0;
+            let rightPtr = newStr.length - 1;
+
+            // now check if it is almost palindromic
+            // we remove one char at a time and see if the str is palindrome
+            while (leftPtr < rightPtr) {
+                let temp = newStr.split().splice(leftPtr, 1).join();
+                let isPalindrome = isPalindrome(temp);
+
+                if (isPalindrome) {
+                    longestStr = newStr;
+                    leftPtr++;
+                }
+                leftPtr++;
+            }
+
+        }
+    }
 };
+
+var isPalindrome = function (str) {
+    let leftPtr = 0;
+    let rightPtr = newStr.length - 1;
+
+    while (leftPtr < rightPtr) {
+        let isPalidrome = true;
+        if (s[leftPtr] !== s[rightPtr]) {
+            isPalindrome = false;
+            break;
+        }
+    }
+
+    return isPalindrome;
+}
