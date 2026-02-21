@@ -80,36 +80,40 @@ var almostPalindromic = function (s) {
             newStr += s[j];
 
             let leftPtr = 0;
-            let rightPtr = newStr.length - 1;
 
             // now check if it is almost palindromic
             // we remove one char at a time and see if the str is palindrome
-            while (leftPtr < rightPtr) {
-                let temp = newStr.split().splice(leftPtr, 1).join();
-                let isPalindrome = isPalindrome(temp);
+            while (leftPtr < newStr.length) {
+                let temp = newStr.slice(0, leftPtr) + newStr.slice(leftPtr + 1); // concatenate everything before the char with everything after the char
 
-                if (isPalindrome) {
-                    longestStr = newStr;
-                    leftPtr++;
+                if (isPalindrome(temp)) {
+                    if (newStr.length > longestStr.length) {
+                        longestStr = newStr;
+                    }
+                    break; // no need to check any more characters of this substring
                 }
+
                 leftPtr++;
+
             }
 
         }
     }
+
+    return longestStr.length;
 };
 
 var isPalindrome = function (str) {
     let leftPtr = 0;
-    let rightPtr = newStr.length - 1;
+    let rightPtr = str.length - 1;
 
     while (leftPtr < rightPtr) {
-        let isPalidrome = true;
-        if (s[leftPtr] !== s[rightPtr]) {
-            isPalindrome = false;
-            break;
+        if (str[leftPtr] !== str[rightPtr]) {
+            return false;
         }
+        leftPtr++;
+        rightPtr--;
     }
 
-    return isPalindrome;
+    return true;
 }
