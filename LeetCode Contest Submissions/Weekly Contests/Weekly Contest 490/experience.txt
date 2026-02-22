@@ -1,0 +1,17 @@
+Link: https://leetcode.com/contest/weekly-contest-490/
+
+This contest had 3 medium problems and 1 hard problem. I solved one medium problem and attempted another but couldn't solve it on time.
+
+Contest Ranking: 
+
+Here's the problem list:
+
+-- Medium --
+
+(1) https://leetcode.com/problems/find-the-score-difference-in-a-game/
+(2) https://leetcode.com/problems/check-digitorial-permutation/
+(3) https://leetcode.com/problems/maximum-bitwise-xor-after-rearrangement/
+
+-- Hard --
+
+(1) https://leetcode.com/problems/count-sequences-to-k/
