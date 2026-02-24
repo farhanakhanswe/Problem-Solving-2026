@@ -1,0 +1,41 @@
+(1) What is a binary tree?
+
+(Ans) A Binary Tree is a data structure where:
+        (a) Each node has at most two children
+        (b) The two children are called:
+            (i) Left child
+            (ii) Right child
+        (c) The top node is called Root
+
+(2) Basic Terms 
+
+    (a) Root: The first node of the tree
+    (b) Parent: A node that has children
+    (c) Child: A node connected below another node
+    (d) Leaf:  A node with no children
+    (e) Edge: The connection between two nodes
+    (f) Height: The maximum distance (number of edges) from the root to a leaf.
+
+(3) Example:
+
+    A
+   / \
+  B   C
+
+  Here, A is the root
+  B and C are children of A
+  B and C are leaf nodes
+
+(4) Types of Binary Trees
+
+    (a) Full Binary Tree    
+         - Every node has either 0 or 2 children
+
+    (b) Complete Binary Tree
+         - All levels are filled except possibly the last
+         - The last level is filled from left to right
+
+    (c) Skewed Binary Tree
+         - Every node has only one child
+         - It looks like a linked list
+
