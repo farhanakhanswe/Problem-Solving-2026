@@ -39,3 +39,45 @@
          - Every node has only one child
          - It looks like a linked list
 
+(5) Code:
+
+    class Node {
+        constructor(value) {
+            this.value = value;
+            this.left = null;
+            this.right = null;
+        }
+    }
+
+    class BinarySearchTree {
+        constructor() {
+            this.root = null;
+        }
+
+        insert(value) {
+            const newNode = new Node(value);
+
+            if (this.root === null) {
+                this.root = newNode;
+                return;
+            }
+
+            let current = this.root;
+
+            while (true) {
+                if (value < current.value) {
+                    if (current.left === null) {
+                        current.left = newNode;
+                        return;
+                    }
+                    current = current.left;
+                } else {
+                    if (current.right === null) {
+                        current.right = newNode;
+                        return;
+                    }
+                    current = current.right;
+                }
+            }
+        }
+    }   
