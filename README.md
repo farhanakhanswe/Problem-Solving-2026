@@ -2,7 +2,7 @@
 
 This repository documents my year long journey in 2026 of problem solving in multiple languages.
 
-Currently, my LeetCode rank is: 1,371,211, Contest Rating: 1,406 & I'm
+Currently, my LeetCode rank is: 1,347,902, Contest Rating: 1,385 & I'm
 
 (1) Solving NeetCode150 which is a list of categorized questions that are also found on LeetCode. 
 
