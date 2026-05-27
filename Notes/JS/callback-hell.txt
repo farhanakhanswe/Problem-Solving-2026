@@ -1,0 +1,61 @@
+(1) Callback hell happens when multiple asynchronous operations are nested inside each other using 
+    callbacks, making code hard to read, debug, and maintain.
+
+(2) Example of Callback Hell:
+
+    getUser(userId, function(user) {
+        getPosts(user, function(posts) {
+            getComments(posts, function(comments) {
+                saveComments(comments, function(result) {
+                    console.log("Done!");
+                });
+            });
+        });
+    });
+
+    Here, there are many problems:
+    - Deep nesting (“pyramid of doom”)
+    - Difficult error handling
+    - Hard to reuse or maintain code
+    - Reduced readability
+
+(3) How Promises Solve It
+
+    A Promise represents the eventual completion (or failure) of an asynchronous operation.
+
+    Promises allow chaining with .then() and centralized error handling using .catch().
+
+    Same Example Using Promises
+    getUser(userId)
+    .then(user => getPosts(user))
+    .then(posts => getComments(posts))
+    .then(comments => saveComments(comments))
+    .then(result => {
+        console.log("Done!");
+    })
+    .catch(error => {
+        console.error(error);
+    });
+
+(4) Advantages of Promises
+
+    - Cleaner and flatter code structure
+    - Better readability
+    - Easier error handling
+    - Avoids excessive nesting
+    - Supports chaining of async tasks
+
+
+(5) Promises are the foundation for modern async/await syntax, which makes asynchronous code look synchronous and even easier to understand.
+
+    Example:
+
+    async function run() {
+    try {
+        const user = await getUser(userId);
+        const posts = await getPosts(user);
+        console.log(posts);
+    } catch (err) {
+        console.error(err);
+    }
+}
