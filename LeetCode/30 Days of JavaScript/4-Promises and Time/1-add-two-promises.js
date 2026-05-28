@@ -17,8 +17,13 @@ var addTwoPromises = async function(promise1, promise2) {
 /* 
     Notes:
     
-    (1) A Promise is a placeholder for a value that will be available in the future, so we use await to pause
-        execution of the current async function until that value is resolved.
+    (1) An async function automatically returns a promise. So, even if we are writing the code to return an integer inside this function, 
+        JS is actually returning a promise when this async function  is executed behind the scenes. 
+
+            return Promise.resolve(val1 + val2);
+    
+    (2) A Promise is a placeholder for a value that will be available in the future, so we use await to pause
+        execution of the current async function until that promise is resolved or rejected.
 
     (2) Here is a more simplified version:
      
