@@ -20,6 +20,6 @@ My goal for 2026 is participate in atleast 100 contests; not to win, but to impr
 
 Starting 30/5/2026, I'll add the following prefixes according to the commit type:
 
-(1) "docs:" for documentation-related changes
-(2) "contests:" for contest-related solutions
+(1) "docs:" for documentation-related changes <br/>
+(2) "contests:" for contest-related solutions <br/>
 (3) "problems:" for problem solutions
