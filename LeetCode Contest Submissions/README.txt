@@ -30,3 +30,4 @@ Here's the problem list:
 
 (1) 
 
+(3) Starting 31/5/2026, all contest-related commit messages will start with the "contests:" prefix.
