@@ -38,3 +38,10 @@ var cancellable = function(fn, args, t) {
  *      console.log(result); // [{"time":20,"returned":10}]
  *  }, maxT + 15)
  */
+
+/* 
+    Notes:
+
+    (1) const cancel = cancellable(log, args, t); Here, cancel is storing the closure 
+
+*/
