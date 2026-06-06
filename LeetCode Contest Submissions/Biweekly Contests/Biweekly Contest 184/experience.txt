@@ -1,0 +1,20 @@
+Link: https://leetcode.com/contest/biweekly-contest-184/
+
+I only solved the easy problem during the contest period.
+
+Contest Ranking: 20020
+
+Here's the problem list:
+
+-- Easy --
+
+(1) (SOLVED) https://leetcode.com/problems/exactly-one-consecutive-set-bits-pair/
+
+-- Medium --
+
+(1) https://leetcode.com/problems/minimum-energy-to-maintain-brightness/
+(2) https://leetcode.com/problems/maximum-total-value-of-covered-indices/description/
+
+-- Hard --
+
+(1) https://leetcode.com/problems/maximum-score-with-co-prime-element/
