@@ -1,0 +1,20 @@
+Link: https://leetcode.com/contest/weekly-contest-505/
+
+I only attempted the easy problem but couldn't answer it on time.
+
+Contest Ranking: 33257
+
+Here's the problem list:
+
+-- Easy --
+
+(1) (ATTEMPTED) https://leetcode.com/problems/sum-of-compatible-numbers-in-range-i/
+
+-- Medium --
+
+(1) https://leetcode.com/problems/valid-binary-strings-with-cost-limit/
+
+-- Hard --
+
+(1) https://leetcode.com/problems/maximum-sum-of-m-non-overlapping-subarrays-i/
+(2) https://leetcode.com/problems/maximum-sum-of-m-non-overlapping-subarrays-ii/description/
