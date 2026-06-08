@@ -1,0 +1,26 @@
+(1) DFS -> Depth First Search
+(2) DFS is a way to explore a graph or tree by going as deep as possible along one path before backtracking.
+    It starts from a node, visits a neighbor (node), then continues to the next neighbor of that node, and keeps
+    going until there are no more unvisited nodes in that path. Then it goes back (backtracks) and explores
+    other paths.
+
+    In simple terms, DFS = go deep first, then go back and try other paths.
+
+(3) It is commonly used in trees and graphs to explore all possible nodes.
+
+(4) Example:
+
+        A
+       / \
+      B   D
+     /
+    C
+
+    Let's say we start from A.
+    (1) Start at A
+    (2) Go to B
+    (3) Go to C
+    (4) Backtrack to B
+    (5) Backtrack to A
+    (6) Go to D
+    (7) Done. All paths explored.
