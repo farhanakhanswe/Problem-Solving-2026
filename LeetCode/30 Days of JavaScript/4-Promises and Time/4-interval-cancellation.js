@@ -45,3 +45,16 @@ var cancellable = function (fn, args, t) {
  *                           // ]
  *  }, cancelTimeMs + t + 15)    
  */
+
+
+/*
+    Notes:
+
+    (1) fn needs to be executed immediately, and then it will get executed again after every t milliseconds.
+
+    (2) If we look at the comments provided, the closure that cancellable function returns
+        is assigned to the variable "cancel". This closure has access to the interval timer in the parent function.
+
+    (3) So, now we can use the cancel variable to cancel the interval timer.
+
+*/
