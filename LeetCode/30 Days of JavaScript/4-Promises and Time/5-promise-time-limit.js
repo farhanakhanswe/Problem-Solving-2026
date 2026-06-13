@@ -30,3 +30,12 @@ var timeLimit = function (fn, t) {
  * const limited = timeLimit((t) => new Promise(res => setTimeout(res, t)), 100);
  * limited(150).catch(console.log) // "Time Limit Exceeded" at t=100ms
  */
+
+ /* 
+    Notes:
+
+    (1) Return a new async function that calls fn(...args) with whatever arguments it receives.
+    (2) If fn finishes within t milliseconds, resolve with the value returned by fn.
+    (3) If fn takes longer than t milliseconds, reject with the string "Time Limit Exceeded". 
+
+ */
