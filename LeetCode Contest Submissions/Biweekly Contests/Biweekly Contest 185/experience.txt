@@ -1,0 +1,20 @@
+Link: https://leetcode.com/contest/biweekly-contest-185/
+
+I only solved the easy problem during contest period.
+
+Contest Ranking: 
+
+Here's the problem list:
+
+-- Easy --
+
+(1) (SOLVED) https://leetcode.com/contest/biweekly-contest-185/problems/create-grid-with-exactly-one-path/
+
+-- Medium --
+
+(1) https://leetcode.com/contest/biweekly-contest-185/problems/minimum-lights-to-illuminate-a-road/description/
+(2) https://leetcode.com/contest/biweekly-contest-185/problems/finish-time-of-tasks-i/description/
+
+-- Hard --
+
+(1) https://leetcode.com/contest/biweekly-contest-185/problems/count-good-integers-in-a-range/
