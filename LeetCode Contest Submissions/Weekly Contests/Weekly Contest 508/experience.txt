@@ -1,0 +1,17 @@
+Link: https://leetcode.com/contest/weekly-contest-508/
+
+I was only able to solve one medium problem during contest period.
+
+Contest Ranking: 21695
+
+Here's the problem list:
+
+-- Medium --
+
+(1) (SOLVED) https://leetcode.com/problems/maximum-total-sum-of-k-selected-elements/
+(2) https://leetcode.com/problems/filter-occupied-intervals/description/
+(3) https://leetcode.com/problems/maximum-subarray-sum-after-multiplier/
+
+-- Hard --
+
+(1) https://leetcode.com/problems/minimum-time-to-reach-target-with-limited-power/
