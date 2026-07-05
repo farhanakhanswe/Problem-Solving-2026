@@ -1,0 +1,8 @@
+CREATE TABLE orders (
+    order_id INTEGER,
+    product_id INTEGER,
+    quantity INTEGER,
+    PRIMARY KEY(order_id, product_id)
+)
+
+
