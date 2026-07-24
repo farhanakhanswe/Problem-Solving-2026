@@ -1,4 +1,4 @@
-// Link: https://neetcode.io/problems/sql-booleans/question
+-- Link: https://neetcode.io/problems/sql-booleans/question
 
 CREATE TABLE three_column_table (
   id INTEGER PRIMARY KEY,
