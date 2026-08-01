@@ -1,0 +1,20 @@
+Link: https://leetcode.com/contest/biweekly-contest-188/
+
+I couldn't manage to solve any of the problems during contest period.
+
+Contest Ranking: 42641
+
+Here's the problem list:
+
+-- Easy --
+
+(1) (ATTEMPTED) https://leetcode.com/problems/count-valid-prefixes/
+
+-- Medium --
+
+(1) https://leetcode.com/problems/widest-possible-fence/
+(2) https://leetcode.com/problems/minimum-initial-strength-to-defeat-all-monsters/
+
+-- Hard --
+
+(1) https://leetcode.com/problems/minimum-possible-maximum-waiting-time/
